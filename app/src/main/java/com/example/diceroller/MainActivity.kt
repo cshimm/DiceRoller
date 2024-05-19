@@ -78,6 +78,11 @@ fun DiceWithButtonAndImage(
                 Text(text = roll.toString())
             }
         }
+        Button(onClick = {
+            history.clear()
+        }) {
+            Text(text = stringResource(id = (R.string.clear)))
+        }
     }
 }
 
